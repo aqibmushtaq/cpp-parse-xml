@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInput>
+    <Configuration>
+        <SchedulingPolicy> FCFS </SchedulingPolicy>
+        <Preemptive>No</Preemptive>
+        <NumberOfDisks>1</NumberOfDisks>
+        <NumberofPrinters>1</NumberofPrinters>
+    </Configuration>
+    <Processes number="2">
+        <Process ID="P1">
+            <ArrivalTime>0</ArrivalTime>
+            <Type>IO_Bound</Type>
+            <code>
+                WRITE SCREEN
+                READ KEYBOARD
+                COMPUTE
+                READ MEMORY
+                COMPUTE
+                WRITEMEMORY
+                WRITE PRINTER
+            </code>
+        </Process>
+        <Process ID="P2">
+            <ArrivalTime>3</ArrivalTime>
+            <Type>CPU_Bound</Type>
+            <code>
+                COMPUTE
+                READ MEMORY
+                COMPUTE
+            </code>
+        </Process>
+    </Processes>
+</ProjectInput> 
